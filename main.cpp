@@ -1,13 +1,12 @@
 #include <iostream>
 #include "deck.h"
-
+deck* cards;
 bool onePlay(){
-    return false;
+
 }
 int main()
 {
-    deck* deckC = new deck;
-    cout<<deckC->getCard();
-    cout<<deckC->getCard();
+    cards = new deck();
+
     return 0;
 }

@@ -10,7 +10,7 @@ public:
     deck();
     int getCard();
     int getSize();
-    int usedCOunt();
+    int usedCount();
     void shuffle();
 
 private:
