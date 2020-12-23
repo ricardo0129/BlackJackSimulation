@@ -7,15 +7,16 @@
 using namespace std;
 class deck{
 public:
-    deck();
-    int getCard();
+    deck(int n);
+    int getCard(int i);
     int getSize();
     int usedCount();
     void shuffle();
 
 private:
-    deque<int> D;
+    vector<int> D;
     int used;
+    int deckSize;
 };
 
 #endif

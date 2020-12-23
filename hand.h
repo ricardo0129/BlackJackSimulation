@@ -8,6 +8,12 @@ public:
     hand(){
     };
 
+    hand(int a, int b)
+    {
+        cards.push_back(a);
+        cards.push_back(b);
+    };
+
     void addCard(int c){
         cards.push_back(c);
     };

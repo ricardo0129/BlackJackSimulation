@@ -1,6 +1,6 @@
 #include "deck.h"
 
-deck::deck(){
+deck::deck(int n){
     for(int i=0;i<4;i++){
         for(int j= 0;j<13;j++){
             D.push_back(min((j+1),10));
@@ -8,14 +8,12 @@ deck::deck(){
     } 
     random_shuffle(D.begin(),D.end());
     used = 0;
+    deckSize = n*52;
 }
 
 int
-deck::getCard(){
-    int d1 = D.front(); D.pop_front();
-    D.push_back(d1);
-    used++;
-    return d1;
+deck::getCard(int i){
+    return D[i%deckSize];
 }
 
 int
